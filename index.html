@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartCity OS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>NEON CITY<span>Dashboard v2.0</span></h1>
+        </header>
+
+        <div class="grid">
+            <div class="card" id="weather-card">
+                <div class="icon">🌡️</div>
+                <h3>Weather</h3>
+                <p id="weather-val">Scanning...</p>
+            </div>
+
+            <div class="card" id="currency-card">
+                <div class="icon">💎</div>
+                <h3>Market (INR)</h3>
+                <p id="currency-val">Scanning...</p>
+            </div>
+
+            <div class="card" id="citizen-card">
+                <div class="icon">👤</div>
+                <h3>Top Citizen</h3>
+                <div id="citizen-val">Scanning...</div>
+            </div>
+
+            <div class="card" id="fact-card">
+                <div class="icon">📡</div>
+                <h3>City Intel</h3>
+                <p id="fact-val">Scanning...</p>
+            </div>
+        </div>
+
+        <div class="chat-section">
+            <div id="chat-display"></div>
+            <div class="input-group">
+                <input type="text" id="user-input" placeholder="Ask the City AI...">
+                <button onclick="askAI()">SEND</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

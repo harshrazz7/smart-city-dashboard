@@ -1,0 +1,116 @@
+:root {
+    --neon: #00f2ff;
+    --bg: #0a0b10;
+    --card: #161b22;
+}
+
+body {
+    background: var(--bg);
+    color: white;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header h1 {
+    color: var(--neon);
+    letter-spacing: 2px;
+}
+
+header span {
+    display: block;
+    font-size: 12px;
+    color: #888;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.card {
+    background: var(--card);
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #30363d;
+    text-align: center;
+}
+
+.card .icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    margin: 5px 0;
+    color: var(--neon);
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.card img {
+    width: 60px;
+    border-radius: 50%;
+    border: 2px solid var(--neon);
+    margin-top: 10px;
+}
+
+.chat-section {
+    margin-top: 30px;
+    background: var(--card);
+    border-radius: 15px;
+    padding: 20px;
+    border: 1px solid #30363d;
+}
+
+#chat-display {
+    height: 200px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #30363d;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    background: #0d1117;
+    border: 1px solid #30363d;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+button {
+    background: var(--neon);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.user-txt {
+    color: var(--neon);
+    margin-bottom: 10px;
+}
+
+.ai-txt {
+    color: #fff;
+    background: #21262d;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
